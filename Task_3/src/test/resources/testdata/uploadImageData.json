@@ -1,0 +1,40 @@
+[
+  {
+    "id": 18041129,
+    "name": "Beagle",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/beagle1.jpg",
+      "/photos/beagle2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 800,
+        "name": "M-22043"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 18041130,
+    "name": "Labrador Retriever",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/labrador1.jpg",
+      "/photos/labrador2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 801,
+        "name": "M-22044"
+      }
+    ],
+    "status": "pending"
+  }
+]

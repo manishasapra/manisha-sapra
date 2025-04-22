@@ -1,0 +1,21 @@
+[
+  {
+    "id": 23041129,
+    "name": "Poodle",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/dog1.jpg",
+      "/photos/dog2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 500,
+        "name": "friendly"
+      }
+    ],
+    "status": "available"
+  }
+]

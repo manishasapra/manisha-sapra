@@ -1,0 +1,21 @@
+[
+  {
+    "id": 21041129,
+    "name": "Bulldog",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/dog1.jpg",
+      "/photos/dog2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 600,
+        "name": "loyal"
+      }
+    ],
+    "status": "available"
+  }
+]

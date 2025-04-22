@@ -1,0 +1,40 @@
+[
+  {
+    "id": 17041129,
+    "name": "Rottweiler",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/rottweiler1.jpg",
+      "/photos/rottweiler2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 700,
+        "name": "M-22041"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 17041130,
+    "name": "Golden Retriever",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/goldenretriever1.jpg",
+      "/photos/goldenretriever2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 701,
+        "name": "M-22042"
+      }
+    ],
+    "status": "pending"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": 19041129,
+    "name": "Golden Retriever",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/dog1.jpg",
+      "/photos/dog2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 200,
+        "name": "M-22049"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 19041130,
+    "name": "Labrador Retriever",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/dog3.jpg",
+      "/photos/dog4.jpg"
+    ],
+    "tags": [
+      {
+        "id": 201,
+        "name": "M-22048"
+      }
+    ],
+    "status": "pending"
+  }
+]

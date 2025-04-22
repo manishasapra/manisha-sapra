@@ -1,0 +1,25 @@
+[
+  {
+    "id": 20041129,
+    "name": "Bulldog",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/dog1.jpg",
+      "/photos/dog2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 100,
+        "name": "friendly"
+      },
+      {
+        "id": 101,
+        "name": "playful"
+      }
+    ],
+    "status": "available"
+  }
+]

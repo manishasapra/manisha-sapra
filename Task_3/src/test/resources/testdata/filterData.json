@@ -1,0 +1,40 @@
+[
+  {
+    "id": 22041129,
+    "name": "German Shepherd",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/dog1.jpg",
+      "/photos/dog2.jpg"
+    ],
+    "tags": [
+      {
+        "id": 300,
+        "name": "M-2204"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 22041130,
+    "name": "Beagle",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "/photos/dog3.jpg",
+      "/photos/dog4.jpg"
+    ],
+    "tags": [
+      {
+        "id": 301,
+        "name": "M-2204"
+      }
+    ],
+    "status": "available"
+  }
+]
