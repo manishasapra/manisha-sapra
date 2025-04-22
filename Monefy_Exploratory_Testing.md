@@ -16,6 +16,7 @@ While performing the exploratory testing below charters were taken into consider
     * Select multiple currencies and validate income/expense in them.
     * Change setting and validate app behaviour based on settings.
     * Export the data and validate export functionality.
+    * Change currency and validate income / expense in different currency.
 
 
 * ### Charter 2 : Environment support
@@ -36,7 +37,6 @@ While performing the exploratory testing below charters were taken into consider
     * #### Purpose : To Validate the app can be used by anyone
     * #### Approach :
         * Change language and validate localization.
-        * Change currency and validate income / expense in different currency.
         * Swiping / Clicking on the app.
         * Filter based on Day, Week, Month or a custom date and validate them.
 
@@ -51,10 +51,10 @@ _**Note** : Details of test cases are present at the end of the page to further 
 
 ## Key Bug Findings
 
-| Bug                                         | Description                                                                                                       | Charter   | Steps to reproduce                                                                                                                                                                                            | Expected Result                                 | Actual Result                                               |
-|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|-------------------------------------------------------------|
-| App is crashing while filtering with `Day`  | User can navigate between multiple filters, while selecting `Day` filter after `Interval` filter app is crashing. | Usability | <ul><li>Open app and go to `Filters` by clicking on top left corner</li><li>Click on `Interval`</li><li>Select an Interval for previous two days</li><li>Now select `Day` again</li><li>Swipe right</li></ul> | User should be able to swipe                    | App is crashing                                             |
-| Localization is not working                 | User can select a particular language but only few parts of the app are getting localized.                        | Usability | <ul><li>Open app and go to `Settings`</li><li>Click on `Language`</li><li>Select `Deutsch` and click `OK`</li></ul>                                                                                           | Text should be localized in expense/income tab  | Open expense/income tab and check text, it is not localized |
+| Bug                                         | Description                                                                                                       | Charter       | Steps to reproduce                                                                                                                                                                                            | Expected Result                                 | Actual Result                                               |
+|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|-------------------------------------------------------------|
+| App is crashing while filtering with `Day`  | User can navigate between multiple filters, while selecting `Day` filter after `Interval` filter app is crashing. | Functionality | <ul><li>Open app and go to `Filters` by clicking on top left corner</li><li>Click on `Interval`</li><li>Select an Interval for previous two days</li><li>Now select `Day` again</li><li>Swipe right</li></ul> | User should be able to swipe                    | App is crashing                                             |
+| Localization is not working                 | User can select a particular language but only few parts of the app are getting localized.                        | Usability     | <ul><li>Open app and go to `Settings`</li><li>Click on `Language`</li><li>Select `Deutsch` and click `OK`</li></ul>                                                                                           | Text should be localized in expense/income tab  | Open expense/income tab and check text, it is not localized |
 
 ## Prioritization of Charters
 
@@ -114,7 +114,7 @@ Additional test case details based on charters
   | `High Priority`  | Transfer amount from one account to another account. | Fund should be transferred and charts should be updated. |
   | `Low Priority`   | Transfer amount from same account to same account.   | User should not be able to transfer the amount.          |
 
-4. Pro Features
+4. Premium Features
 
   | Priority         | Test Case Description                                                                                     | Expected Result                                                 |
   |------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
