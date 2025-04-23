@@ -44,7 +44,7 @@ Primary reason was to use RestAssured in order to automate the PET store APIs. I
 ### Run without Docker :
 
 - Prerequisites
-  <pre>Ensure Java 17+ is installed.<br/>Install Maven (version 3.8+ recommended)<br/></pre>
+  <pre>Ensure Java 17+ is installed.<br/>Install Maven (version 3.8+ recommended)<br/>Change host in src/test/resources/env.properties to http://0.0.0.0:8080</pre>
 - Run with testng
   <pre>mvn test -Dsurefire.suiteXmlFiles=test-suite.xml</pre>
 

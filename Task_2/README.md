@@ -47,7 +47,7 @@ Primary reason was to use Appium in order to automate the `Monefy` application. 
 ### Run without Docker :
 
 - Prerequisites
-  <pre>Ensure Java 17+ is installed.<br/>Install Maven (version 3.8+ recommended)<br/></pre>
+  <pre>Ensure Java 17+ is installed.<br/>Install Maven (version 3.8+ recommended)<br/>Change host in src/test/resources/env.properties to http://127.0.0.1:4723</pre>
 - Run with testng
   <pre>mvn test -Dsurefire.suiteXmlFiles=test-suite.xml</pre>
 
