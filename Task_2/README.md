@@ -34,9 +34,12 @@ Primary reason was to use RestAssured in order to automate the PET store APIs. I
 ### Run with Docker :
 
 - Prerequisites
-  <pre>Install docker for containerized test runs<br/></pre>
+
+  `Install docker for containerized test runs`
+
+
 - Build docker image
-  <pre>ddocker build -t n26-appium-tests .</pre>
+  <pre>docker build -t n26-appium-tests .</pre>
 - Run docker container
   <pre>docker run -e TZ=Europe/Berlin --rm n26-appium-tests</pre>
     _note: Modify the time zone accordingly if needed as test cases validates the time of the operation._ 

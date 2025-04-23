@@ -32,7 +32,10 @@ Primary reason was to use RestAssured in order to automate the PET store APIs. I
 ### Run with Docker :
 
 - Prerequisites
-  <pre>Install docker for containerized test runs<br/></pre>
+
+  `Install docker for containerized test runs`
+
+
 - Build docker image
   <pre>docker build -t n26-restassured-tests .</pre>
 - Run docker container
