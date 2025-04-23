@@ -10,6 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+/**
+ * This class is responsible for defining common variables and functions of all the pages
+ */
 public class AbstractPage extends BaseTest {
 
     public AppiumDriver driver;
@@ -22,26 +25,21 @@ public class AbstractPage extends BaseTest {
         wait = new WebDriverWait(this.driver, Duration.ofSeconds(testConfig.longWait()));
     }
 
-    /*
-     * Wait for element to be available and return with specified wait time.
-     * Using explicit wait.
+    /**
+     * Wait for element to be available and return with specified wait time Using explicit wait.
      *
-     * @param		None			None
-     * @return		MobileElement	element after available
-     *
+     * @param elementToWait
+     * @return
      */
     protected WebElement waitAndReturnElementAvailable(WebElement elementToWait) {
         return wait.until(ExpectedConditions.visibilityOf(elementToWait));
     }
 
-
-    /*
-     * Wait for element to be clickable and return with specified wait time.
-     * Using explicit wait.
+    /**
+     * Wait for element to be clickable and return with specified wait time Using explicit wait.
      *
-     * @param		None			None
-     * @return		MobileElement	element after clickable
-     *
+     * @param elementToWait
+     * @return
      */
     protected WebElement waitAndReturnElementClickable(WebElement elementToWait) {
         return wait.until(ExpectedConditions.elementToBeClickable(elementToWait));

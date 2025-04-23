@@ -7,9 +7,12 @@ import org.openqa.selenium.support.FindBys;
 
 import java.util.List;
 
+/**
+ * This class is responsible for Keeping OR and methods for home page
+ */
 public class HomePage extends AbstractPage {
 
-    //OR for Setup Page.
+    //OR for Home Page
     @FindBy(id = "com.monefy.app.lite:id/income_button")
     private WebElement incomeBtn;
 
@@ -41,33 +44,64 @@ public class HomePage extends AbstractPage {
         super(driver);
     }
 
+    /**
+     * This method is responsible for clicking on add income button
+     *
+     * @return IncomeAndExpensePage
+     */
     public IncomeAndExpensePage addIncome() {
         log.infoMSG("Clicking the income button");
         waitAndReturnElementClickable(incomeBtn).click();
         return new IncomeAndExpensePage(driver);
     }
 
+    /**
+     * This method is responsible for clicking on add expense button
+     *
+     * @return IncomeAndExpensePage
+     */
     public IncomeAndExpensePage addExpense() {
         log.infoMSG("Clicking the expense button");
         waitAndReturnElementClickable(expenseBtn).click();
         return new IncomeAndExpensePage(driver);
     }
 
+    /**
+     * This method is responsible for fetching added income
+     *
+     * @return String
+     */
     public String getAddedIncome() {
         log.infoMSG("Fetching the total income");
         return waitAndReturnElementAvailable(incomeAmountText).getText();
     }
 
+    /**
+     * This method is responsible for fetching added expense
+     *
+     * @return String
+     */
     public String getAddedExpense() {
         log.infoMSG("Fetching the total expense");
         return waitAndReturnElementAvailable(expenseAmountText).getText();
     }
 
+    /**
+     * This method is responsible for fetching balance amount
+     *
+     * @return String
+     */
     public String getBalanceAmount() {
         log.infoMSG("Fetching the balance amount");
         return waitAndReturnElementAvailable(balanceAmount).getText();
     }
 
+    /**
+     * This method is responsible for clicking and searching a titile
+     *
+     * @param title
+     * @return SearchResultPage
+     */
     public SearchResultPage performSearch(String title) {
         log.infoMSG("Clicking on search icon");
         waitAndReturnElementClickable(menuSearch).click();
@@ -78,6 +112,11 @@ public class HomePage extends AbstractPage {
         return new SearchResultPage(driver);
     }
 
+    /**
+     * This method is responsible for clicking on expense button on home page
+     *
+     * @return IncomeAndExpensePage
+     */
     public IncomeAndExpensePage addExpenseFromHomePage() {
         log.infoMSG("Clicking on expense category icon on home page");
         waitAndReturnElementClickable(category).click();

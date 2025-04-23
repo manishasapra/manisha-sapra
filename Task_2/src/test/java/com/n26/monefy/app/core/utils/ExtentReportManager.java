@@ -17,7 +17,7 @@ public class ExtentReportManager {
     private static ExtentReports extent;
 
     /**
-     * Method to get the instance of Extent Report.
+     * This method is responsible to get the instance of Extent Report.
      *
      * @return Instance
      */
@@ -31,13 +31,12 @@ public class ExtentReportManager {
             extent.setSystemInfo("Company", "N26");
             extent.setSystemInfo("Brand", "Monefy App");
             extent.setSystemInfo("OS", System.getProperty("os.name"));
-            extent.setSystemInfo("OS", System.getProperty("user.name"));
         }
         return extent;
     }
 
     /**
-     * Method to get the path where extent reports will be saved.
+     * This method is responsibl to get the path where extent reports will be saved.
      *
      * @return Path of extent report
      */

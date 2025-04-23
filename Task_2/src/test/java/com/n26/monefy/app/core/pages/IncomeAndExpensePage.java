@@ -4,8 +4,12 @@ import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+/**
+ * This class is responsible for Keeping OR and methods for income and expense page
+ */
 public class IncomeAndExpensePage extends AbstractPage {
 
+    //OR for Income and Expense Page
     @FindBy(id = "com.monefy.app.lite:id/buttonKeyboard0")
     private WebElement amount0Key;
 
@@ -28,6 +32,12 @@ public class IncomeAndExpensePage extends AbstractPage {
         super(driver);
     }
 
+    /**
+     * This method is responsible for entering income with note and category
+     *
+     * @param note
+     * @return HomePage
+     */
     public HomePage enterIncome(String note) {
         log.infoMSG("Entering income");
         waitAndReturnElementClickable(amount1Key).click();
@@ -42,6 +52,11 @@ public class IncomeAndExpensePage extends AbstractPage {
         return new HomePage(driver);
     }
 
+    /**
+     * This method is responsible for entering expense with category
+     *
+     * @return HomePage
+     */
     public HomePage enterExpense() {
         log.infoMSG("Entering expense");
         waitAndReturnElementClickable(amount1Key).click();
@@ -53,6 +68,11 @@ public class IncomeAndExpensePage extends AbstractPage {
         return new HomePage(driver);
     }
 
+    /**
+     * This method is responsible for entering expense with selected category
+     *
+     * @return HomePage
+     */
     public HomePage enterExpenseFromHomePage() {
         log.infoMSG("Clicking on expense category from home page");
         waitAndReturnElementClickable(amount1Key).click();

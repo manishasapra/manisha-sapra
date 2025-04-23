@@ -2,6 +2,9 @@ package com.n26.monefy.app.core.dataprovider;
 
 import org.testng.annotations.DataProvider;
 
+/**
+ * This class is responsible for providing data to tests
+ */
 public class MonefyDataProvider {
 
     @DataProvider

@@ -55,7 +55,7 @@ Primary reason was to use RestAssured in order to automate the PET store APIs. I
 ## Framework Highlights
 
 ### Scalability :
-The framework is designed in such a way that it is capable of handling thousands of cases. Though only test cases using Appium is being automated as part of this task but the framework is capable of supporting all type of automation tools an technologies.
+The framework is designed in such a way that it can easily be scaled to write iOS automation test cases with very minium change.
 
 ### Maintainability :
 This framework is very easy to maintain as all the dependencies are at one place also `DataProviders` are being used which makes the case independent to run on any kind of data.

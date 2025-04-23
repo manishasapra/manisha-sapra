@@ -17,6 +17,9 @@ import org.testng.annotations.*;
 
 import java.net.URL;
 
+/**
+ * This is the base class which is reponsible for passing cruical dependencies
+ */
 public class BaseTest {
 
     public AppiumDriver driver;
@@ -29,6 +32,11 @@ public class BaseTest {
     protected IncomeAndExpensePage incomeAndExpensePage;
     protected SearchResultPage searchResultPage;
 
+    /**
+     * This method is responsible for launcing and setting up the app initially
+     *
+     * @throws Exception
+     */
     @BeforeSuite
     protected void setUpApp() throws Exception {
         driver = getAppiumDriver();
@@ -37,7 +45,7 @@ public class BaseTest {
     }
 
     /**
-     * Responsible for setup before every test method call
+     * This method is responsible for setup before every test method call
      */
     @BeforeMethod
     protected void setUp() {
@@ -45,13 +53,16 @@ public class BaseTest {
     }
 
     /**
-     * Responsible for tearDown after every test method call
+     * This method is responsible for tearDown after every test method call
      */
     @AfterMethod
     protected void tearDown() {
         ((InteractsWithApps) driver).terminateApp(testConfig.appPackage());
     }
 
+    /**
+     * This method is responsible for quitting the driver after suite
+     */
     @AfterSuite
     protected void TearDownApp() {
         if(driver != null) {
@@ -60,6 +71,12 @@ public class BaseTest {
         }
     }
 
+    /**
+     * This method is responsible for setting up the AppiumDriver to use further in the tests
+     *
+     * @return
+     * @throws Exception
+     */
     public AppiumDriver getAppiumDriver() throws Exception {
 
         log.infoMSG("Initializing common capabilities.");

@@ -31,7 +31,6 @@ public class ExtentReportManager {
             extent.setSystemInfo("Company", "N26");
             extent.setSystemInfo("Brand", "Pet Shop");
             extent.setSystemInfo("OS", System.getProperty("os.name"));
-            extent.setSystemInfo("OS", System.getProperty("user.name"));
         }
         return extent;
     }
