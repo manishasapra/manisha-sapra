@@ -11,8 +11,17 @@ import java.io.File;
 
 import static io.restassured.RestAssured.*;
 
+/**
+ * This class is responsible for calling the actual endpoints
+ */
 public class EndpointActions {
 
+    /**
+     * This class is responsible for creating a PET
+     *
+     * @param pet
+     * @return Response
+     */
     public Response createPet(Pet pet) {
         return given()
                 .contentType(ContentType.JSON)
@@ -24,6 +33,12 @@ public class EndpointActions {
                 .response();
     }
 
+    /**
+     * This class is responsible for fetching a PET with id
+     *
+     * @param petId
+     * @return Response
+     */
     public Response getPetById(long petId) {
         return given()
                 .pathParam("petId", petId)
@@ -34,6 +49,12 @@ public class EndpointActions {
                 .response();
     }
 
+    /**
+     * This class is responsible for uodating a PET
+     *
+     * @param pet
+     * @return Response
+     */
     public Response updatePet(Pet pet) {
         return given()
                 .contentType(ContentType.JSON)
@@ -45,6 +66,12 @@ public class EndpointActions {
                 .response();
     }
 
+    /**
+     * This class is responsible for updating a PET with Id
+     *
+     * @param pet
+     * @return Response
+     */
     public Response updatePetById(Pet pet) {
         return given()
                 .contentType(ContentType.JSON)
@@ -58,6 +85,12 @@ public class EndpointActions {
                 .response();
     }
 
+    /**
+     * This class is responsible for fetching PETs with tag
+     *
+     * @param filterTag
+     * @return Response
+     */
     public Response getPetByFilterTag(String filterTag) {
         return given()
                 .queryParam("tags", filterTag)
@@ -68,6 +101,12 @@ public class EndpointActions {
                 .response();
     }
 
+    /**
+     * This class is responsible for fetching PETs with status
+     *
+     * @param status
+     * @return Response
+     */
     public Response getPetByStatus(String status) {
         return given()
                 .queryParam("status", status)
@@ -78,6 +117,13 @@ public class EndpointActions {
                 .response();
     }
 
+    /**
+     * This class is responsible for uploading image to a created PET
+     *
+     * @param petId
+     * @param file
+     * @return Response
+     */
     public Response uploadImageAsOctetStream(long petId, File file) {
         EncoderConfig encoderconfig = new EncoderConfig();
         return given().log().all()
@@ -93,6 +139,12 @@ public class EndpointActions {
                 .response();
     }
 
+    /**
+     * This class is responsible for deleting a created PET
+     *
+     * @param petId
+     * @return Response
+     */
     public Response deletePet(long petId) {
         return given()
                 .pathParam("petId", petId)

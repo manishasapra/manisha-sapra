@@ -7,11 +7,17 @@ import org.aeonbits.owner.ConfigFactory;
 import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.BeforeClass;
 
+/**
+ * This is the base class which is reponsible for passing cruical dependencies
+ */
 public class BaseTest {
 
     protected final LoggerUtility log = new LoggerUtility(LogManager.getLogger(getClass()));
     protected final TestConfig testConfig = ConfigFactory.create(TestConfig.class, System.getProperties());
 
+    /**
+     * This method is responsible for setting up base uri before test runs
+     */
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = testConfig.baseUri();

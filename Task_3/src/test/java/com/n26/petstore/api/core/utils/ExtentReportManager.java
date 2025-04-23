@@ -17,7 +17,7 @@ public class ExtentReportManager {
     private static ExtentReports extent;
 
     /**
-     * Method to get the instance of Extent Report.
+     * This method is responsible to get the instance of Extent Report.
      *
      * @return Instance
      */
@@ -36,7 +36,7 @@ public class ExtentReportManager {
     }
 
     /**
-     * Method to get the path where extent reports will be saved.
+     * This method is responsible to get the path where extent reports will be saved.
      *
      * @return Path of extent report
      */

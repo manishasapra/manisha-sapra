@@ -1,5 +1,8 @@
 package com.n26.petstore.api.core.controller;
 
+/**
+ * This class contains all endpoint paths at one place
+ */
 public class ControllerConstants {
 
     public static String PET_ID_ENDPOINT  = "/{petId}";

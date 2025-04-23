@@ -9,6 +9,9 @@ import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.List;
 
+/**
+ * This class is responsible for providing data to tests
+ */
 public class PetDataProvider {
 
     @DataProvider(name = "petData")

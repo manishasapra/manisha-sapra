@@ -1,5 +1,8 @@
 package com.n26.petstore.api.core.dataprovider;
 
+/**
+ * This class contain constant data
+ */
 public class DataProviderConstants {
 
     public static String UPDATED_NAME = "updated_name";

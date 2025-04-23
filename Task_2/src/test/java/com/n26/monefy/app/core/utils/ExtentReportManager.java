@@ -36,7 +36,7 @@ public class ExtentReportManager {
     }
 
     /**
-     * This method is responsibl to get the path where extent reports will be saved.
+     * This method is responsible to get the path where extent reports will be saved.
      *
      * @return Path of extent report
      */
