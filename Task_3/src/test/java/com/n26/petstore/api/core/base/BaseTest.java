@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.BeforeClass;
 
 /**
- * This is the base class which is reponsible for passing cruical dependencies
+ * This is the base class which is responsible for passing crucial dependencies
  */
 public class BaseTest {
 
@@ -16,7 +16,7 @@ public class BaseTest {
     protected final TestConfig testConfig = ConfigFactory.create(TestConfig.class, System.getProperties());
 
     /**
-     * This method is responsible for setting up base uri before test runs
+     * This method is responsible for setting up base URI before test runs
      */
     @BeforeClass
     public void setup() {

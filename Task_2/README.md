@@ -7,7 +7,7 @@ This repository contains the dockerised automation framework to perform testing 
 # Tech Stack
 
 ###  Reason to choose the below tech stack :
-Primary reason was to use RestAssured in order to automate the PET store APIs. I also have hands-on experience on the below technologies and assignment documents says these technologies are are being using in N26.
+Primary reason was to use Appium in order to automate the \Monefy\ application. I also have hands-on experience on the below technologies and assignment documents says these technologies are are being using in N26.
 
 - Java 17+
 - Maven 3.8+

@@ -6,7 +6,7 @@ import com.aventstack.extentreports.Status;
 import org.apache.logging.log4j.Logger;
 
 /**
- * This class is single unit to manage all the logs of the application using log4j2
+ * This class is a single unit to manage all the logs of the application using log4j2
  */
 public class LoggerUtility {
 

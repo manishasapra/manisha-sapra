@@ -10,7 +10,7 @@ import java.util.Locale;
 public class CommonUtility {
 
     /**
-     * This method is responsible for fetching the currect date to match with the income date
+     * This method is responsible for fetching the current date to match with the income date
      * in tests
      *
      * @param locale

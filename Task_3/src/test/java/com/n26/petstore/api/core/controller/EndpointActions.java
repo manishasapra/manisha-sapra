@@ -50,7 +50,7 @@ public class EndpointActions {
     }
 
     /**
-     * This class is responsible for uodating a PET
+     * This class is responsible for updating a PET
      *
      * @param pet
      * @return Response

@@ -97,7 +97,7 @@ public class HomePage extends AbstractPage {
     }
 
     /**
-     * This method is responsible for clicking and searching a titile
+     * This method is responsible for clicking and searching a title
      *
      * @param title
      * @return SearchResultPage

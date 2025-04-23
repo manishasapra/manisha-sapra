@@ -18,7 +18,7 @@ import org.testng.annotations.*;
 import java.net.URL;
 
 /**
- * This is the base class which is reponsible for passing cruical dependencies
+ * This is the base class which is responsible for passing cruical dependencies
  */
 public class BaseTest {
 
@@ -33,7 +33,7 @@ public class BaseTest {
     protected SearchResultPage searchResultPage;
 
     /**
-     * This method is responsible for launcing and setting up the app initially
+     * This method is responsible for launching and setting up the app initially
      *
      * @throws Exception
      */

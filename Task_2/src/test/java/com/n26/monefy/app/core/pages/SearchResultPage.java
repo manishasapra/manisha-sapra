@@ -27,7 +27,7 @@ public class SearchResultPage extends AbstractPage {
     }
 
     /**
-     * This method is responsible for fetching titile text from the search result
+     * This method is responsible for fetching title text from the search result
      *
      * @return String
      */
